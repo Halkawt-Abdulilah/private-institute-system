@@ -15,7 +15,7 @@ const attachCookieToResponse = ({ res, user }) => {
 
     const oneDay = 1000 * 60 * 60 * 24
 
-    res.cookie('pisToken', token, {
+    res.cookie('piToken', token, {
         httpOnly: true,
         expires: new Date(Date.now() + oneDay),
         secure: process.env.DEV_STAGE === 'production',

@@ -18,9 +18,12 @@ app.use(cookieParser(process.env.COOKIE_SECRET))
 app.use(cors())
 
 const authRoutes = require('./routes/authRoutes')
+const redirect  = require('./middleware/redirect')
 
-app.get('/', (req, res) => res.send('Hello World!'))
+// app.patch('/', (req, res) => res.status(200).json({msg:'Hello World!'}))
 app.use('/', authRoutes)
+
+app.use(redirect)
 
 app.listen(port, () => {
     try {

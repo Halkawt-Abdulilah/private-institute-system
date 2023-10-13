@@ -3,6 +3,7 @@ import { extendTheme, ChakraProvider } from '@chakra-ui/react'
 import {RouterProvider, createBrowserRouter}  from 'react-router-dom'
 import LoginPage from './pages/Login';
 import DashboardPage from './pages/Dashboard';
+import NotFoundPage from './pages/NotFoundPage';
 
 const colors = {
   brand: {
@@ -16,16 +17,18 @@ const theme = extendTheme({ colors })
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/login',
     element: <LoginPage />
   },
   {
     path: '/dashboard',
     element: <DashboardPage />
+  },
+  {
+    path: '*',
+    element: <NotFoundPage />
   }
 ])
-
-console.log(router)
 
 function App() {
   return (
