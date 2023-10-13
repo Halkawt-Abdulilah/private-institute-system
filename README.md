@@ -7,7 +7,7 @@ The Private Institute Web App is a comprehensive platform designed to streamline
 
 The Private Institute Web App includes the following key features:
 
-- **Role-Based Access Control (RBAC)**: Assign and manage user roles, such as students, teachers, and administrators, with varying levels of access.
+- **Role-Based Access Control (RBAC)**: Assign and manage user roles, such as teachers, and administrators, with varying levels of access.
 
 - **Student Management**: Easily enroll and manage student records, including personal information and course details.
 
